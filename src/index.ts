@@ -18,7 +18,7 @@ import type { McpToolDef } from "./types.js";
 
 // Register the mock server global so start_mock_server works.
 // Side-effect import — sets globalThis.__mockServerStart__.
-import "../../mock-server/index.js";
+import "../mock-server/index.js";
 
 const allTools: McpToolDef[] = [
   ...simulatorTools,
