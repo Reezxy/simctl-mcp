@@ -1,0 +1,35 @@
+{
+  "GET /api/user": {
+    "status": 200,
+    "body": {
+      "id": 1,
+      "name": "Test User",
+      "email": "test@example.com"
+    }
+  },
+  "POST /api/login": {
+    "status": 200,
+    "body": {
+      "token": "mock-jwt-token-12345",
+      "expiresIn": 3600
+    }
+  },
+  "GET /api/feed": {
+    "status": 200,
+    "delay_ms": 500,
+    "body": {
+      "items": [
+        { "id": 1, "title": "First item" },
+        { "id": 2, "title": "Second item" }
+      ]
+    }
+  },
+  "POST /api/purchase": {
+    "status": 500,
+    "error": "Payment gateway unavailable"
+  },
+  "DELETE /api/session": {
+    "status": 204,
+    "body": null
+  }
+}
