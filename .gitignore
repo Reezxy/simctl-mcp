@@ -1,2 +1,7 @@
 node_modules/
 dist/
+screenshots/
+*.log
+.env
+.env.*
+.DS_Store
